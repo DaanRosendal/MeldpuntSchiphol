@@ -1,0 +1,258 @@
+/*Gemaakt door: Daan Rosendal. Studentennummer: 97059531
+Stijlen voor Project Schiphol Meldpunt */
+html {
+    overflow: auto;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(white, #0099ff);
+    background-attachment: fixed;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #0099ff;
+    border-radius: 5px;
+}
+
+li {
+    float: left;
+    width: 20%;
+}
+
+.notRight {
+    border-right: 1px solid white;
+}
+
+#logo {
+    background-color: white;
+    color: #0099ff;
+    padding: 12px 14px;
+    cursor: context-menu;
+    border-right: none;
+    transition: none;
+    border: 2px solid #0099ff;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    border: 2px solid #0099ff;
+}
+
+li a:hover {
+    transition: background-color 0.8s;
+    transition-timing-function: ease;
+    background-color: #0033cc;
+    border: 2px solid #0033cc;
+}
+
+.title h1 {
+    color: #0099ff;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    margin: 0;
+    cursor: context-menu;
+    font-size: 3rem;
+
+    border-bottom: 5px solid #0099ff;
+    border-radius: 50%;
+}
+
+.container {
+    padding-top: 15px;
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    color: #0033cc;
+}
+
+#overOns {
+    padding-top: 15px;
+    width: 80%;
+    text-align: left;
+    margin: auto;
+    padding: 5px 5px;
+    margin-top: 10px;
+    color: #0033cc;
+}
+
+.linkje {
+    text-decoration: none;
+    color: #0033cc;
+    font-weight: bold;
+}
+
+.padding {
+    padding-top: 20px;
+    color: #0033cc;
+}
+
+#table1 {
+    border: 1px solid #0033cc;
+    margin: auto;
+    color: black;
+}
+
+#table1 th,
+#table1 td {
+    border: 1px solid #0033cc;
+}
+
+#table1 th {
+    background-color: #0099ff;
+}
+
+#table1 tr:nth-child(even) {
+    background: linear-gradient(#0099ff, white);
+}
+
+#table1 tr:nth-child(odd) {
+    background: linear-gradient(white, #0099ff);
+}
+
+#aantalTabel {
+    margin: auto;
+    margin-top: -20px;
+    color: black;
+}
+
+#aantalTabel td {
+    text-align: left;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+input[type=text],
+select,
+option,
+input[type=email],
+input[type=date] {
+    width: 25%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #EBF5FB;
+    border-radius: 10px;
+    color: #0033cc;
+    transition: 0.4s;
+}
+
+input[type=date] {
+    margin: 4px 0;
+}
+
+input[type=text]:hover,
+select:hover,
+option:hover,
+input[type=email]:hover,
+input[type=date]:hover {
+    border: 2px solid #0033cc;
+}
+
+input[type=submit] {
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #0033cc;
+    border-radius: 10px;
+    color: #0033cc;
+    background: white;
+    transition: 0.4s;
+}
+
+
+input[type=reset] {
+    width: 5%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #0033cc;
+    border-radius: 10px;
+    color: #0033cc;
+    background: white;
+    transition: 0.4s
+}
+
+input[type=submit]:hover,
+input[type=reset]:hover {
+    background-color: #0033cc;
+    color: white;
+}
+
+input::placeholder {
+    color: #0033cc;
+}
+
+/* radio buttons stijlen */
+
+.geslacht {
+    list-style-type: none;
+    width: 25%;
+    margin: auto;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+    border: 2px solid #EBF5FB;
+    border-radius: 10px;
+    color: #0033cc;
+    transition: 0.4s;
+}
+
+.geslacht li {
+    float: left;
+    margin: 0;
+    width: 50%;
+    height: 30px;
+    position: relative;
+}
+
+.geslacht label,
+.geslacht input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.geslacht input[type="radio"] {
+    opacity: 0.01;
+    z-index: 100;
+}
+
+.geslacht input[type="radio"]:checked+label,
+.Checked+label {
+    background: #0033cc;
+    color: white;
+}
+
+.geslacht label {
+    padding: 5px;
+    cursor: pointer;
+    z-index: 90;
+    transition: 0.4s;
+}
+
+.geslacht label:hover {
+    background: #0033cc;
+    color: white;
+}
+
+.geslacht:hover {
+    border: 2px solid #0033cc;
+}
